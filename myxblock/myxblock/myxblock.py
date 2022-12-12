@@ -34,8 +34,13 @@ class MyXBlock(XBlock):
         The primary view of the MyXBlock, shown to students
         when viewing courses.
         """
+        if context is None:
+            context = {}
+
+        context['button_text'] = config.button_text
+
         html = self.resource_string(config.block_content_path)
-        frag = Fragment(html.format(self=self))
+        frag = Fragment(html.format(self=self, button_text=context['button_text']))
         frag.add_css(self.resource_string(config.block_content_css_path))
         frag.add_javascript(self.resource_string(config.block_content_js_path))
         # frag.initialize_js('MyXBlock')
