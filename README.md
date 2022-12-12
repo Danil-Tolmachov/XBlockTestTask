@@ -1,37 +1,37 @@
 # XBlockTestTask
 Test task for the candidate
 
-1.Створити папку для клонування:
+1. Створити папку для клонування:
 ```console
 mkdir testdir
 cd testdir
 ```
-2.Створити та активувати віртуальне оточення:
+2. Створити та активувати віртуальне оточення:
 ```console
 virtualenv venv
 venv\Scripts\activate.bat (для Windows)
 source tutorial-env/bin/activate (для Linux та Mac OS)
 ```
-3.Клонувати репозиторій:
+3. Клонувати репозиторій:
 ```console
 git clone https://github.com/Danil-Tolmachov/XBlockTestTask
 ```
-4.Клонувати SDK:
+4. Клонувати SDK:
 ```console
 git clone https://github.com/openedx/xblock-sdk.git
 cd xblock-sdk
 pip install -r requirements/base.txt
 ```
-5.Зробити міграції
+5. Зробити міграції
 ```console
 python manage.py migrate
 cd ..
 ```
-6.Встановити myxblock
+6. Встановити myxblock
 ```console
 pip install -e myxblock
 ```
-7.Запустити локальний сервер
+7. Запустити локальний сервер
 ```console
 cd xblock-sdk
 python manage.py runserver
