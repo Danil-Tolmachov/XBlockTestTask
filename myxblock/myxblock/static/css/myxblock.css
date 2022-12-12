@@ -1,0 +1,32 @@
+/* CSS for MyXBlock */
+
+.collapse-button {
+    width: 100%;
+    height: 50px;
+
+    cursor: pointer;
+    transition: 0.25s;
+
+    border: none;
+    background-color: grey;
+}
+
+.collapse-button:hover {
+    transition: 0.25s;
+
+    background-color: #c5c5c5;
+}
+
+.collapse-content .main-content {
+    width: 100%;
+    height: 200px;
+
+    margin: 0;
+    text-align: center;
+
+    background-color: #9eff9e;
+}
+
+.collapse-content h1 {
+    margin: 0;
+}
